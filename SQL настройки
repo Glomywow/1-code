@@ -1,0 +1,9 @@
+delete
+FROM [up].[dbo].[_SystemSettings]
+where _UserId='ФИО' and [_ObjectKey] like '%Сервис.ЭДО%'
+
+USE [database]
+GO
+SELECT [_UserId]='ФИО'
+     ,[_ObjectKey]
+FROM [dbo].[_SystemSettings]
